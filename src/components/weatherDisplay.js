@@ -25,7 +25,7 @@ const Description = styled.div`
 function WeatherDisplay({ weather }) {
   console.log('weather',weather)
   // const [unit, setUnit] = useState("C");
-  const { unit, city } = useSelector((state) => state.weather);
+  const { unit } = useSelector((state) => state.weather);
 
   // const toggleUnit = () => {
   //   setUnit(unit === "C" ? "F" : "C");
