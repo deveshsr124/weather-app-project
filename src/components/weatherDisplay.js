@@ -1,5 +1,5 @@
 // src/components/WeatherDisplay.js
-import React, { useState } from "react";
+import React  from "react";
 import styled from "styled-components";
 import { useSelector } from "react-redux";
 
@@ -20,14 +20,7 @@ const Description = styled.div`
   color: #888;
 `;
 
-const UnitToggle = styled.button`
-  padding: 5px 10px;
-  border-radius: 20px;
-  border: 1px solid #ddd;
-  background-color: #f0f0f0;
-  cursor: pointer;
-  margin-bottom: 10px;
-`;
+
 
 function WeatherDisplay({ weather }) {
   console.log('weather',weather)

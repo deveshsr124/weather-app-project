@@ -1,6 +1,6 @@
 
 // src/components/Header.js
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import CityImage from "./cityImage";
 import WeatherDisplay from "./weatherDisplay";
@@ -23,24 +23,6 @@ const SearchInput = styled.input`
   margin-bottom: 20px;
 `;
 
-const UnitToggle = styled.button`
-  padding: 10px;
-  border-radius: 20px;
-  border: 1px solid #ddd;
-  background-color: #f0f0f0;
-  cursor: pointer;
-  margin-top: 10px;
-`;
-
-const Temperature = styled.div`
-  font-size: 48px;
-  font-weight: bold;
-`;
-
-const WeatherIcon = styled.div`
-  font-size: 48px;
-  margin: 10px 0;
-`;
 
 const DateTime = styled.div`
   font-size: 16px;
@@ -60,7 +42,7 @@ const AdditionalInfo = styled.div`
   margin-bottom: 20px;
 `;
 
-function Header({ onSearch, onUnitToggle, weatherData }) {
+function Header({ onSearch, weatherData }) {
   const [city, setCity] = useState("");
   const [submittedCity, setSubmittedCity] = useState("");
 

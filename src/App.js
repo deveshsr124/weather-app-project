@@ -76,7 +76,7 @@ function App() {
 
   return (
     <Container>
-      <Header onSearch={handleSearch} onUnitToggle={handleUnitToggle} weatherData={weather}/>
+      <Header onSearch={handleSearch}  weatherData={weather}/>
       {weather && (
         <MainContent>
           {/* <WeatherDisplay weather={weather} /> */}
